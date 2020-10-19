@@ -2,20 +2,22 @@ package com.starway.starrobot.VisitingDataSQL;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity
 public class UserData {
+    @PrimaryKey(autoGenerate = true)
     private int Id;
     @ColumnInfo(name="用户名称")
     private String UserName;
     @ColumnInfo(name="用户学号")
     private String  UserId;
 
-    public UserData(String userName, String userId) {
+     UserData(String userName, String userId) {
         UserName = userName;
         UserId = userId;
     }
-
+    UserData(){}
     public int getId() {
         return Id;
     }
@@ -24,19 +26,19 @@ public class UserData {
         Id = id;
     }
 
-    public String getUserName() {
+     String getUserName() {
         return UserName;
     }
 
-    public void setUserName(String userName) {
+     void setUserName(String userName) {
         UserName = userName;
     }
 
-    public String getUserId() {
+     String getUserId() {
         return UserId;
     }
 
-    public void setUserId(String userId) {
+     void setUserId(String userId) {
         UserId = userId;
     }
 }
