@@ -22,4 +22,5 @@
   <string name="welcome_tip1">对我说:“小途小途”</string>
   <string name="welcome_tip2">想要唤醒我的话</string>
   <string name="face_recognition">人脸识别</string>
+  <string name="setting_visitingdata">来访记录</string>
 </resources>

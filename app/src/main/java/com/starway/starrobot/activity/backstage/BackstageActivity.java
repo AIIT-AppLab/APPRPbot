@@ -124,6 +124,9 @@ public class BackstageActivity extends BaseActivity implements View.OnClickListe
                 Common.doStartApplicationWithPackageName(getApplication(), "com.android.tv.settings");
                 startService(floatBtnIntent);
                 break;
+            case R.id.openVisData:
+                startActivity(new Intent(this, WiFiManageActivity.class));
+                break;
             /*case R.id.siteManager:
                 if (RobotInitState.getRobotInitState().hadInitialized()) {
                     startActivity(new Intent(this, SiteManageActivity.class));

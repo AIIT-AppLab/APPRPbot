@@ -29,8 +29,9 @@
             android:paddingBottom="20dp">
 
             <LinearLayout
+                android:id="@+id/openVisData"
                 android:layout_width="@dimen/menuBlockSize"
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
                 android:layout_marginLeft="@dimen/menuBlockMargin"
                 android:layout_marginRight="@dimen/menuBlockMargin"
                 android:background="@drawable/bg_ripple_red"
@@ -42,7 +43,7 @@
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:padding="13dp"
                     app:srcCompat="@drawable/ic_receipt_black_24dp" />
@@ -51,14 +52,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/setting_wifi"
+                    android:text="@string/setting_visitingdata"
                     android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/openWiFi"
                 android:layout_width="@dimen/menuBlockSize"
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
                 android:layout_marginLeft="@dimen/menuBlockMargin"
                 android:layout_marginRight="@dimen/menuBlockMargin"
                 android:background="@drawable/bg_ripple_blue"
