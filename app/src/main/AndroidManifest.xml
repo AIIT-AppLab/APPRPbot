@@ -63,6 +63,8 @@
       />
 
   <application
+      tools:replace="android:appComponentFactory"
+      android:appComponentFactory="任意字符"
     android:allowBackup="true"
     android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
     android:icon="@mipmap/ic_launcher"
@@ -125,7 +127,6 @@
       android:authorities="com.iflytek.aiui.cfg.provider"
       android:exported="true"
       android:multiprocess="false"/>
-
   </application>
 
 </manifest>
