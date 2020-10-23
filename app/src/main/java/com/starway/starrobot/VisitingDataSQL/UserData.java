@@ -11,13 +11,22 @@ public class UserData {
     @ColumnInfo(name="用户名称")
     private String UserName;
     @ColumnInfo(name="用户学号")
-    private String  UserId;
+    private String  USerNum;
 
-     UserData(String userName, String userId) {
+     public UserData(String userName, String userid) {
         UserName = userName;
-        UserId = userId;
+        USerNum = userid;
     }
-    UserData(){}
+
+    public String getUSerNum() {
+        return USerNum;
+    }
+
+    public void setUSerNum(String USerNum) {
+        this.USerNum = USerNum;
+    }
+
+    public  UserData(){}
     public int getId() {
         return Id;
     }
@@ -26,19 +35,12 @@ public class UserData {
         Id = id;
     }
 
-     String getUserName() {
+    public String getUserName() {
         return UserName;
     }
 
-     void setUserName(String userName) {
+    public void setUserName(String userName) {
         UserName = userName;
     }
 
-     String getUserId() {
-        return UserId;
-    }
-
-     void setUserId(String userId) {
-        UserId = userId;
-    }
 }

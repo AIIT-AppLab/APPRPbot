@@ -125,7 +125,7 @@ public class BackstageActivity extends BaseActivity implements View.OnClickListe
                 startService(floatBtnIntent);
                 break;
             case R.id.openVisData:
-                startActivity(new Intent(this, WiFiManageActivity.class));
+                startActivity(new Intent(this, VisitingDataActivity.class));
                 break;
             /*case R.id.siteManager:
                 if (RobotInitState.getRobotInitState().hadInitialized()) {
